@@ -1,0 +1,130 @@
+:root {
+    --background-color-light: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); /* Light background color */
+    --text-color-light: #333333; /* Light text color */
+    --button-background-light: linear-gradient(135deg, #dce0e8 0%, #9ca4b7 100%); /* Light button background color */
+    --button-text-light: #333333; /* Light button text color */
+  
+    background-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%); /* Dark background color */
+    --text-color-dark: #ffffff; /* Dark text color */
+    --button-background-dark: linear-gradient(135deg, #43443f 0%, #2e2e05 100%); /* Dark button background color */
+    --button-text-dark: #ffffff; /* Dark button text color */
+  }
+  
+  .signup-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: var(--background-color-light); /* Light mode background */
+    color: var(--text-color-light); /* Light mode text color */
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .dark-mode .signup-page {
+    background: var(--background-color-dark); /* Dark mode background */
+    color: var(--text-color-dark); /* Dark mode text color */
+  }
+  
+  .signup-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 40px;
+    background: var(--background-color-light); /* Light mode background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Box shadow */
+    border-radius: 8px;
+    color: inherit; /* Inherit text color */
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .dark-mode .signup-container {
+    background: var(--background-color-dark); /* Dark mode background */
+    color: var(--text-color-dark); /* Dark mode text color */
+  }
+  
+  .signup-container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .signup-container form div {
+    margin-bottom: 15px;
+    color: inherit; /* Inherit text color */
+  }
+  
+  .signup-container form label {
+    display: block;
+    margin-bottom: 5px;
+    color: inherit; /* Inherit text color */
+  }
+  
+  .signup-container form input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 1); /* Full opacity background for inputs */
+    border: 1px solid #c3c3af; /* Border color */
+    border-radius: 4px;
+    color: #333333; /* Text color */
+  }
+  .dark-mode .signup-container form input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    background-color: rgb(216, 219, 194); /* Full opacity background for inputs */
+    border: 1px solid #c3c3af; /* Border color */
+    border-radius: 4px;
+    color: #333333; /* Text color */
+  }
+  
+  .signup-container form input:focus {
+    outline: none;
+    background-color: #8d8f77; /* Background color on input focus */
+  }
+  
+  .signup-container form button {
+    width: 100%;
+    padding: 10px;
+    background: var(--button-background-light); /* Light button background */
+    border: none;
+    color: var(--button-text-light); /* Light button text color */
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .signup-container form button:hover {
+    background: linear-gradient(135deg, #c1c3ca 0%, #8d94a5 100%);/* Darker shade on hover */
+  }
+  .dark-mode .signup-container form button:hover {
+    background: linear-gradient(135deg, #61635c 0%, #454508 100%);/* Darker shade on hover */
+  }
+  
+  .dark-mode .signup-container form button {
+    background: var(--button-background-dark); /* Dark button background */
+    color: var(--button-text-dark); /* Dark button text color */
+  }
+  
+  .signup-container p {
+    text-align: center;
+    margin-top: 10px;
+    color: inherit; /* Inherit text color */
+  }
+  
+  .signup-container p a {
+    color: #5b5e42; /* Link color */
+    text-decoration: underline;
+  }
+  
+  .signup-container p a:hover {
+    background: linear-gradient(135deg, #dce0e8 0%, #9ca4b7 100%);
+    color: #7c8b90;; /* Link color on hover */
+  }
+  .dark-mode .signup-container p a:hover {
+    background: linear-gradient(135deg, #d2d5de 0%, #b4bcd2 100%);
+    color: #dfdfd0; /* Link color on hover */
+  }
+  .dark-mode .signup-container p a:hover {
+    background: linear-gradient(135deg, #1f201e 0%, #272e02 100%);
+   
+  }
+  

@@ -1,0 +1,94 @@
+:root {
+  --background-color-light: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  --text-color-light: #333333;
+  --button-background-light: #ccccb3;
+  --button-text-light: #333333;
+
+  --background-color-dark: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
+  --text-color-dark: #ffffff;
+  --button-background-dark: #ccccb3;
+  --button-text-dark: #333333;
+
+  --background-color-darkblue: #1a1a4e;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--background-color-light);
+  color: var(--text-color-light);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.light-mode {
+  background: var(--background-color-light);
+  color: var(--text-color-light);
+}
+
+.dark-mode {
+  background: var(--background-color-dark);
+  color: var(--text-color-dark);
+}
+
+.darkblue-mode {
+  background-color: var(--background-color-darkblue);
+  color: var(--text-color-dark);
+}
+
+.dark-mode .login-container,
+.dark-mode .signup-container {
+  background-color: var(--background-color-dark);
+  color: var(--text-color-dark);
+}
+
+.dark-mode .login-container button,
+.dark-mode .signup-container button,
+.dark-mode-toggle {
+  background-color: var(--button-background-dark);
+  color: var(--button-text-dark);
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.dark-mode-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px;
+  background-color: var(--button-background-light);
+  color: var(--button-text-light);
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 1.5rem;
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode-toggle:hover {
+  transform: scale(1.2);
+  background-color: var(--button-background-dark);
+  color: #ffffff;
+}
+
+.dark-mode-toggle:hover .fa-icon {
+  color: #ffffff !important;
+}
+
+.dark-mode .dark-mode-toggle {
+  color: #737c4a; /* Bright yellow for the sun icon in dark mode */
+}
+
+.app-container {
+  background: var(--background-color-light);
+  color: var(--text-color-light);
+  padding: 20px;
+}
+
+.button {
+  background-color: var(--button-background-light);
+  color: var(--button-text-light);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}

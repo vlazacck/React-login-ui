@@ -1,0 +1,148 @@
+:root {
+    --background-color-light: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); /* Light background color */
+    --text-color-light: #333333; /* Light text color */
+    --button-background-light: linear-gradient(135deg, #dce0e8 0%, #9ca4b7 100%); /* Light button background color */
+    --button-text-light: #333333; /* Light button text color */
+  
+    --background-color-dark: linear-gradient(135deg, #414140 0%, #1d2001 100%); /* Dark background color */
+    --text-color-dark: #ffffff; /* Dark text color */
+    --button-background-dark: linear-gradient(135deg, #383936 0%, #272e02 100%); /* Dark button background color */
+    --button-text-dark: #ffffff; /* Dark button text color */
+  
+    --background-color-darkblue: linear-gradient(135deg, #000428 0%, #004e92 100%); /* Dark blue background color */
+    --text-color-darkblue: #ffffff; /* Dark blue text color */
+    --button-background-darkblue: linear-gradient(135deg, #000428 0%, #004e92 100%); /* Dark blue button background color */
+    --button-text-darkblue: #ffffff; /* Dark blue button text color */
+  }
+  
+  .login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: var(--background-color-light); /* Light mode background */
+    color: var(--text-color-light); /* Light mode text color */
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .dark-mode .login-page {
+    background: var(--background-color-dark); /* Dark mode background */
+    color: var(--text-color-dark); /* Dark mode text color */
+  }
+  
+  .darkblue-mode .login-page {
+    background: var(--background-color-darkblue); /* Dark blue mode background */
+    color: var(--text-color-darkblue); /* Dark blue mode text color */
+  }
+  
+  .login-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 40px;
+    background: var(--background-color-light); /* Light mode background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Box shadow */
+    border-radius: 8px;
+    color: inherit; /* Inherit text color */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-align: center;
+  }
+  
+  .dark-mode .login-container {
+    background: var(--background-color-dark); /* Dark mode background */
+    color: var(--text-color-dark); /* Dark mode text color */
+  }
+  
+  .darkblue-mode .login-container {
+    background: var(--background-color-darkblue); /* Dark blue mode background */
+    color: var(--text-color-darkblue); /* Dark blue mode text color */
+  }
+  
+  .login-container h2 {
+    margin-bottom: 20px;
+  }
+  
+  .login-container form div {
+    margin-bottom: 15px;
+    color: inherit; /* Inherit text color */
+  }
+  
+  .login-container form label {
+    display: block;
+    margin-bottom: 5px;
+    color: inherit; /* Inherit text color */
+  }
+  
+  .login-container form input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 1); /* Full opacity background for inputs */
+    border: 1px solid #ccccb3; /* Border color */
+    border-radius: 4px;
+    color: #333333; /* Text color */
+  }
+  .dark-mode .login-container form input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: rgb(212, 214, 187); /* Full opacity background for inputs */
+    border: 1px solid #ccccb3; /* Border color */
+    border-radius: 4px;
+    color: #333333; /* Text color */
+  }
+  .login-container form input:focus {
+    outline: none;
+    background-color: #ffffff; /* Background color on input focus */
+  }
+  
+  .login-container form button {
+    width: 100%;
+    padding: 12px;
+    background: var(--button-background-light); /* Light button background */
+    border: none;
+    color: var(--button-text-light); /* Light button text color */
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-container form button:hover {
+    background: linear-gradient(135deg, #c1c3ca 0%, #8d94a5 100%);/* Darker shade on hover */
+  }
+  .dark-mode .login-container form button:hover {
+    background: linear-gradient(135deg, #61635c 0%, #454508 100%);/* Darker shade on hover */
+  }
+  
+  .dark-mode .login-container form button {
+    background: var(--button-background-dark); /* Dark button background */
+    color: var(--button-text-dark); /* Dark button text color */
+  }
+  
+  .darkblue-mode .login-container form button {
+    background: var(--button-background-darkblue); /* Dark blue button background */
+    color: var(--button-text-darkblue); /* Dark blue button text color */
+  }
+  
+  .login-container p {
+    margin-top: 10px;
+    color: inherit; /* Inherit text color */
+  }
+  
+  .login-container p a {
+    color: #7c8b90; /* Link color */
+    text-decoration: underline;
+  }
+  .dark-mode .login-container p a {
+    color: #858876; /* Link color */
+    text-decoration: underline;
+  }
+  
+  .login-container p a:hover {
+    background: linear-gradient(135deg, #d2d5de 0%, #b9c1d7 100%); /* Link color on hover */
+  }
+  
+  .dark-mode .login-container p a:hover {
+    background: linear-gradient(135deg, #383936 0%, #272e02 100%);
+    color: #dfdfd0; /* Link color on hover */
+  }
+  
